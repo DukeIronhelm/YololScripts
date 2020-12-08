@@ -1,0 +1,20 @@
+e=1000 f="\nX: " g="\nY: " h="\nZ: " i=0.5 j=1000000
+k=393347889 l=39666 m=100890 n=3395000000 o=58319
+p=114430000 q=18945 r=9809.3 s=1599 ox=-9940 oy=4900 oz=0
+:tm1="station_hq_imperial_a" :tm2="station_capital_imperial_a"
+:tm3="station_hq_kingdom_a" :tm4="station_proving_grounds"
+
+a=j-:s1 b=j-:s2 c=j-:s3 d=j-:s4 x=(a*a+k-c*c)/l y=-(a*a+n-o*x-d*d)/m
+z=-(a*a+p-q*x-r*-y-b*b)/s+oz x+=ox y+=oy vx=x-xo vy=y-yo vz=z-zo xo=x 
+yo=y zo=z vt=vx*((vx>0-i)*2)+vy*((vy>0-i)*2)+vz*((vz>0-i)*2) tx=dx-x 
+ty=dy-y tz=dz-z tt=tx*((tx>0-i)*2)+ty*((ty>0-i)*2)+tz*((tz>0-i)*2)
+:vect=f+vx/vt+g+vy/vt+h+vz/vt :DestVect=f+tx/tt+g+ty/tt+h+tz/tt
+:pos=f+x/e*e+g+y/e*e+h+z/e*e goto7+(:Reload*8)
+
+//set target below, then push reload button
+dx=-1000 dy=2000 dz=-4000 :Dest=f+dx+g+dy+h+dz :Reload=0 goto7
+
+// SETUP - 4x receiver, SignalStrength> s1,s2,s3,s4
+// TargetMessage> tm1,tm2,tm3,tm4
+// button 'Reload', Style 1. Text pannels> Pos, Vect, Dest, DestVect 
+// YS.pos Developed by Senkii, mostly rewritten by Duke

@@ -1,0 +1,10 @@
+a=1000 b=60 c=3600
+RT="inf" RT=:Rod/(R-:Rod) R=:Rod
+h=RT/c/a*a m=(RT-h*c)/b/a*a s=(RT-h*c-m*b)/a*a RT=h+":"+m+":"+s
+PT="inf" PT=:Prop/(P-:Prop) P=:Prop
+h=PT/c/a*a m=(PT-h*c)/b/a*a s=(PT-h*c-m*b)/a*a PT=h+":"+m+":"+s
+:RodTime="\n\n "+RT+"\nPropTime:\n "+PT goto 2
+
+// Change FuelChamberFuel to Rod, GasNetworkStoredResource to Prop
+// Text panel, RodTime
+// Required> Basic
