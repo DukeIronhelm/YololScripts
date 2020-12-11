@@ -5,13 +5,13 @@ ox=-9940 oy=4900 oz=0
 m1="station_hq_imperial_a" m2="station_capital_imperial_a"
 m3="station_hq_kingdom_a" m4="station_proving_grounds" :tm=m4
 
-cd=dm dm=h-:s :tm=m1 d=dm+(dm-cd)*7/8
+d=h-:s :tm=m1
 x=(a*a+k-c*c)/l y=-(a*a+n-o*x-d*d)/m z=-(a*a+p-q*x-r*-y-b*b)/s
-ca=am am=h-:s :tm=m2 a=am+(am-ca)*13/8
+ca=ma ma=h-:s :tm=m2 a=ma+(ma-ca)*3/4
 x=x+ox y=y+oy z=z+oz
-cb=bm bm=h-:s :tm=m3 b=bm+(bm-cb)*11/8
+cb=bm bm=h-:s :tm=m3 b=bm+(bm-cb)/2
 
-cc=cm cm=h-:s :tm=m4 c=cm+(cm-cc)*9/8
+cc=cm cm=h-:s :tm=m4 c=cm+(cm-cc)/4
 :pos="\nX: "+x/e*e+"\nY: "+y/e*e+"\nZ: "+z/e*e goto8
 
 // SETUP - 1x receiver, SignalStrength> s TargetMessage> tm
