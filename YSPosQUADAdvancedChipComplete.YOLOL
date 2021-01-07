@@ -1,0 +1,20 @@
+e=1000 f="\nX: " g="\nY: " h="\nZ: " i=0.5 j=1000000 p="\nVel: "
+k=393347889 l=39666 m=100890 n=3395000000 o=58319 t=60 u=3600
+p1=114430000 q=18945 r=9809.3 s=1599 ox=-9940 oy=4900 oz=0
+:tm1="station_hq_imperial_a" :tm2="station_capital_imperial_a"
+:tm3="station_hq_kingdom_a" :tm4="station_proving_grounds"
+
+a=j-:s1 a*=a b=j-:s2 c=j-:s3 d=j-:s4 x=(a+k-c*c)/l y=-(a+n-o*x-d*d)/m
+z=-(a+p1-q*x-r*-y-b*b)/s x+=ox y+=oy vx=x-xo vy=y-yo vz=z-zo xo=x yo=y
+zo=z vt=(vx^2+vy^2+vz^2)^i w=dx-x ty=dy-y tz=dz-z tt=(w^2+ty^2+tz^2)^i
+v=vt/1.2 et=tt/v th=et/u/e*e tm=(et-th*u)/t/e*e ts=(et-th*u-tm*t)/e*e
+:vect=f+vx/vt+g+vy/vt+h+vz/vt :DestVect=f+w/tt+g+ty/tt+h+tz/tt v=v/e*e
+:pos=f+x/e*e+g+y/e*e+h+z/e*e+p+v :ETA=th+":"+tm+":"+ts goto7+(:Save*8)
+
+//Destination section
+dx=0 dy=0 dz=0 :Dest=f+dx+g+dy+h+dz :Save=0 goto7
+
+
+
+
+// YS.pos Developed by Senkii, mostly rewritten by Duke

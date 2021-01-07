@@ -15,6 +15,6 @@ ty=dy-y tz=dz-z tt=tx*((tx>0-i)*2)+ty*((ty>0-i)*2)+tz*((tz>0-i)*2)
 dx=-1000 dy=2000 dz=-4000 :Dest=f+dx+g+dy+h+dz :Reload=0 goto7
 
 // SETUP - 4x receiver, SignalStrength> s1,s2,s3,s4
-// TargetMessage> tm1,tm2,tm3,tm4
+// TargetMessage> tm1,tm2,tm3,tm4 ReceiverAngle> 180
 // button 'Reload', Style 1. Text pannels> Pos, Vect, Dest, DestVect 
 // YS.pos Developed by Senkii, mostly rewritten by Duke
