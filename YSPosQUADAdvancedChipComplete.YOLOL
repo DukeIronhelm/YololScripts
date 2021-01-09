@@ -14,7 +14,7 @@ v=vt/1.2 et=tt/v th=et/u/e*e tm=(et-th*u)/t/e*e ts=(et-th*u-tm*t)/e*e
 //Destination section
 dx=0 dy=0 dz=0 :Dest=f+dx+g+dy+h+dz :Save=0 goto7
 
-
-
-
+// SETUP - 4x receiver, SignalStrength> s1,s2,s3,s4
+// TargetMessage> tm1,tm2,tm3,tm4 ReceiverAngle> 180
+// button>'Save', Style 1. Text pannels>Pos, Vect, Dest, DestVect, ETA
 // YS.pos Developed by Senkii, mostly rewritten by Duke
