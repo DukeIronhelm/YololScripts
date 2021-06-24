@@ -1,0 +1,20 @@
+goto 1+:ping
+a=5 :Ping1=1 :Ping2=1 :Ping3=1 :Ping4=1
+a-- goto 3+(a==0)
+a=5 :Ping1=0
+a-- goto 5+(a==0)
+a=5 :Ping2=0
+a-- goto 7+(a==0)
+a=5 :Ping3=0
+a-- goto 9+(a==0)
+:Ping=0 :Ping4=0 goto 1
+
+
+
+
+
+
+
+
+// change transponderOn to ping
+// optionally requires 4 warning buttones named ping1 to ping4

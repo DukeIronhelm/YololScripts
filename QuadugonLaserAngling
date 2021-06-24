@@ -1,3 +1,0 @@
-:TR=-90 R=25 e=0.2 f=0.9 h=12 goto 1+:M
-d=:D-e c=d*(d<R)+R*(d>=R) R=c+(0.3*(d>R)*(R<22))
-g=atan(f/c) :TR=g*(g<h)+h*(g>h) goto:M+1

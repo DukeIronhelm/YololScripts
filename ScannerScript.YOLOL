@@ -1,0 +1,20 @@
+:ScnRslt=1 c=1000
+a=:ScnRslt b="" :Ind=0 :Active=:M*(:MiningLaserOn==0) :Scan=1
+b+="\n"+:Mat+" "+:Vol/c*c if :Ind<(a-1) then :Ind+=1 goto 3 end
+:Material=b goto 2
+goto 2
+
+
+
+
+
+
+
+// in the material point scanner change:
+// scanresults to scnRslt, Index to Ind, Material to Mat
+// Volume to Vol
+
+// Material is the output text panel
+
+
+// M must be 1 and MiningLaserOn must be 0 to scan
